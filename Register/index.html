@@ -9,7 +9,7 @@
   <body>
     <div class="layout">
       <h2 class="title">Đăng ký thành viên</h2>
-      <form id="form" action="./req.php" method="POST">
+      <form id="form" action="./req.html" method="POST">
         <div class="form-group">
           <p>Mã Sinh Viên</p>
           <input type="text" id="msv" name="msv" class="input-text" />
@@ -69,7 +69,7 @@
 
         <div class="form-group">
           <p>Quốc tịch</p>
-          <select  class="select" id="nationality" name="nationality" >
+          <select class="select" id="nationality" name="nationality">
             <option value="0">Chọn Quốc Tịch</option>
             <option value="Vietnam">Việt Nam</option>
             <option value="China">China</option>
@@ -85,9 +85,14 @@
           <span></span>
         </div>
 
-        <input class="btn-register" name="btn-req" type="submit" value="Đăng ký"  />
+        <input
+          class="btn-register"
+          name="btn-req"
+          type="submit"
+          value="Đăng ký"
+        />
       </form>
     </div>
-    <!-- <script src="register.js"></script> -->
+    <script src="register.js"></script>
   </body>
 </html>

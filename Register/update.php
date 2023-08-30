@@ -2,7 +2,7 @@
 
 $sid = $_POST['sid'];
 
-require_once 'connect.php';
+require_once 'connect.html';
 
 $msv = $_POST['msv'];
 $name = $_POST['name'];
@@ -18,7 +18,7 @@ $update_result = mysqli_query($conn, $update_sql);
 
 if($update_result){
     echo "<script>alert('Cập nhật thành công')</script>";
-    echo "<script>window.open('listUser.php','_self')</script>";
+    echo "<script>window.open('listUser.html','_self')</script>";
 }
 
 ?>

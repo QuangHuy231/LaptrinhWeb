@@ -1,6 +1,6 @@
 <?php
 
-require_once 'connect.php';
+require_once 'connect.html';
 
 // delete user
 if(isset($_GET['id'])){
@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
     $result = mysqli_query($conn, $sql);
     if($result){
         echo "<script>alert('Xóa thành công')</script>";
-        echo "<script>window.open('listUser.php','_self')</script>";
+        echo "<script>window.open('listUser.html','_self')</script>";
     }
     
 }

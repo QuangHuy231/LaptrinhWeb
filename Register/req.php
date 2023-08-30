@@ -1,6 +1,6 @@
 <?php
 
-    require 'connect.php';
+    require 'connect.html';
 
     if(isset($_POST['btn-req'])){
         $msv = $_POST['msv'];
@@ -15,7 +15,7 @@
             $result = mysqli_query($conn, $sql);
             if($result){
                 echo "<script>alert('Đăng ký thành công')</script>";
-                echo "<script>window.open('listUser.php','_self')</script>";
+                echo "<script>window.open('listUser.html','_self')</script>";
             } 
     }
 }

@@ -22,7 +22,7 @@
             </tr>
             <?php
 
-                require_once 'connect.php';
+                require_once 'connect.html';
 
                 $sql = "SELECT * FROM users";
                 $result = mysqli_query($conn, $sql);
@@ -36,8 +36,8 @@
                     echo "<td>" . $row['sothich'] . "</td>";
                     echo "<td>" . $row['quoctich'] . "</td>";
                     echo "<td>" . $row['ghichu'] . "</td>";
-                    echo "<td><a href='delete.php?id=" . $row['user_id'] . "'>Xóa</a>
-                    <a href='edit.php?id=" . $row['user_id'] . "'>Sửa</a></td>";
+                    echo "<td><a href='delete.html?id=" . $row['user_id'] . "'>Xóa</a>
+                    <a href='edit.html?id=" . $row['user_id'] . "'>Sửa</a></td>";
 
                     echo "</tr>";
                 }

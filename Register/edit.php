@@ -2,7 +2,7 @@
 
 $id = $_GET['id'];
 
-require_once 'connect.php';
+require_once 'connect.html';
 
 $edit_sql = "SELECT * FROM users WHERE user_id = $id";
 
@@ -22,7 +22,7 @@ $row = mysqli_fetch_assoc($edit_result);
   <body>
     <div class="layout">
       <h2 class="title">Đăng ký thành viên</h2>
-      <form id="form" action="update.php" method="POST">
+      <form id="form" action="update.html" method="POST">
         <input type="hidden" name="sid" value="<?php echo $row['user_id']; ?>" />
         <div class="form-group">
           <p>Mã Sinh Viên</p>
