@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+}
+.header a.active {
+  background-color: rgb(148, 195, 236);
+  color: white;
+}
+.header a:hover {
+  opacity: 0.6;
+  background-color: rgb(148, 195, 236);
+  color: white;
+}
+.layout {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 1000px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+select:focus {
+  outline: none;
+}
+
+hr {
+  width: 100%;
+}
+
+.table {
+  width: 800px;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: left;
+}
+
+.table tfoot {
+  text-align: right;
+}

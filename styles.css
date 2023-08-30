@@ -1,0 +1,455 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+}
+
+/* Header/Blog Title */
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  color: #212121;
+}
+
+.header h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1), 4px 4px 0 rgba(0, 0, 0, 0.1),
+    6px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header p {
+  font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #212121;
+  color: white;
+}
+
+/* Định dạng link điều hướng */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Thay đổi màu liên kết khi di chuột qua */
+.topnav a:hover {
+  background-color: #474747;
+  opacity: 0.6;
+}
+
+/* Tạo hai cột không bằng nhau, float cạnh nhau */
+/* Cột trái */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Cột phải */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Hình ảnh bài viết*/
+.images {
+  width: 100%;
+  height: 200px;
+}
+
+/* Thêm định dạng thẻ nội dung thêm */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+}
+
+/* Thêm định dạng thẻ cho bài viết */
+/* .card-news {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  float: left;
+} */
+
+.card-news {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  width: 30%;
+  color: black;
+  text-decoration: none;
+  float: left;
+}
+.thumbnail {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  height: 350px;
+}
+.card-news img {
+  transition: all ease 0.3s;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 20px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.price-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.price {
+  font-size: 24px;
+}
+
+.old-price {
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-right: 8px;
+  color: #6b6b6b;
+}
+
+.add-to-cart {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #8e2de2;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+.add-to-cart:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.card-news:hover img {
+  transform: scale(1.1);
+}
+
+/* Clear float khác sau các cột */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  border-top: black 1px solid;
+}
+.footer-content {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.col {
+  max-width: calc(25% - 40px);
+}
+.col :nth-child(3) {
+  width: auto;
+}
+
+.col .title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.col .text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  display: block;
+}
+.col .c-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.col .c-item svg {
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-top: 4px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.col span .text {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.bottom-bar {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.bottom-bar-content {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+.bottom-bar .text {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* detail */
+.single-product-main-content {
+  margin: 75px 0;
+}
+.single-product-main-content .layout {
+  margin: 0 auto;
+
+  max-width: 1200px;
+}
+.single-product-page {
+  display: flex;
+
+  flex-direction: row;
+}
+.single-product-main-content .layout .left {
+  background-color: rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+
+  width: 600px;
+  height: 600px;
+}
+.single-product-main-content .layout .left img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: contain;
+}
+
+.single-product-main-content .layout .right {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 35px;
+}
+.single-product-main-content .layout .right .name {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* .single-product-main-content .price-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+} */
+.single-product-main-content .layout .right .old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #6b6b6b;
+  margin-right: 20px;
+}
+.single-product-main-content .layout .right .new-price {
+  font-size: 24px;
+}
+
+/* .single-product-main-conten .price {
+  font-size: 24px;
+  margin-bottom: 20px;
+} */
+.desc {
+  color: #6b6b6b;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-buttons {
+  display: flex;
+  margin-top: 30px;
+}
+.single-product-main-content .layout .right .quantity-buttons {
+  width: fit-content;
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  height: 50px;
+}
+.quantity-buttons-span {
+  font-size: 18px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6b6b6b;
+}
+.quantity-buttons-span:nth-child(1) {
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+.quantity-buttons-span:nth-child(2) {
+  width: 60px;
+}
+.quantity-buttons-span:nth-child(3) {
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.cart-buttons .add-to-cart-button {
+  outline: 0;
+  border: 0;
+  height: 50px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background: #8e2de2;
+  border-bottom: 3px solid #6516aa;
+
+  flex-grow: unset;
+}
+.single-product-main-conten .cart-buttons .add-to-cart-button svg {
+  margin-right: 10px;
+}
+
+.divider {
+  margin: 20px 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.info-item .text-bold {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+.info-item .text-bold:nth-child(1) {
+  margin-bottom: 20px;
+}
+.info-item .text-bold span {
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #6b6b6b;
+}
+.info-item .text-bold svg {
+  margin: 0 5px;
+}
+
+.single-product-main-content .layout .sec-heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+.single-product-main-content .layout .sec-heading:after {
+  content: "";
+  display: block;
+
+  width: 50px;
+  height: 3px;
+  background-color: #8e2de2;
+
+  margin-top: 10px;
+}
+/* nav btn */
+.nav-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.nav-btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav-btn a.active {
+  background-color: rgb(148, 195, 236);
+  color: white;
+}
+.nav-btn a:hover {
+  opacity: 0.6;
+  background-color: rgb(148, 195, 236);
+  color: white;
+}
+
+/* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình
+    có chiều rộng dưới 700px */
+@media screen and (max-width: 700px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau
+    khi màn hình có chiều rộng dưới 300px */
+@media screen and (max-width: 300px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}

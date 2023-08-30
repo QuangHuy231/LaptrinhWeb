@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+}
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+}
+.header a.active {
+  background-color: rgb(148, 195, 236);
+  color: white;
+}
+.header a:hover {
+  opacity: 0.6;
+  background-color: rgb(148, 195, 236);
+  color: white;
+}
+
+.layout {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 700px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group p {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.input-text {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.gender-group {
+  display: flex;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.gender-group label {
+  font-size: 18px;
+}
+
+.gender-group input {
+  width: 20px;
+  cursor: pointer;
+}
+
+.interest-group {
+  display: flex;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.interest-group label {
+  font-size: 18px;
+}
+
+.interest-group input {
+  width: 20px;
+  cursor: pointer;
+}
+
+#nationality {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#nationality option {
+  font-size: 18px;
+}
+
+#note {
+  height: 100px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.btn-register {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  background-color: rgb(41, 163, 211);
+  color: white;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  opacity: 0.6;
+}
+
+.form-group.error span {
+  color: red;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.form-group.success span {
+  display: none;
+}
